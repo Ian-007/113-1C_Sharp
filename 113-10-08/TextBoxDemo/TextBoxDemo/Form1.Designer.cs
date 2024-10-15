@@ -34,7 +34,7 @@
             btnComfirm = new Button();
             txtFristName = new TextBox();
             txtLastName = new TextBox();
-            label4 = new Label();
+            lblShow = new Label();
             SuspendLayout();
             // 
             // label1
@@ -94,22 +94,22 @@
             txtLastName.Size = new Size(234, 48);
             txtLastName.TabIndex = 6;
             // 
-            // label4
+            // lblShow
             // 
-            label4.BorderStyle = BorderStyle.Fixed3D;
-            label4.Font = new Font("Microsoft JhengHei UI", 24F);
-            label4.Location = new Point(286, 187);
-            label4.Name = "label4";
-            label4.Size = new Size(260, 58);
-            label4.TabIndex = 7;
-            label4.TextAlign = ContentAlignment.MiddleCenter;
+            lblShow.BorderStyle = BorderStyle.Fixed3D;
+            lblShow.Font = new Font("Microsoft JhengHei UI", 24F);
+            lblShow.Location = new Point(286, 187);
+            lblShow.Name = "lblShow";
+            lblShow.Size = new Size(260, 58);
+            lblShow.TabIndex = 7;
+            lblShow.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label4);
+            Controls.Add(lblShow);
             Controls.Add(txtLastName);
             Controls.Add(txtFristName);
             Controls.Add(btnComfirm);
@@ -130,6 +130,6 @@
         private Button btnComfirm;
         private TextBox txtFristName;
         private TextBox txtLastName;
-        private Label label4;
+        private Label lblShow;
     }
 }
