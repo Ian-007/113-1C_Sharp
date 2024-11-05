@@ -31,11 +31,12 @@ namespace Test_Score_Average
                 average = (test1 + test2 + test3) / 3.0;
                 averageLabel.Text = average.ToString("n1");
 
-                if (average > HIGH_SCORE); 
+                if (average > HIGH_SCORE) ;
                 {
                     MessageBox.Show("恭喜!幹得好!");
                 }
-            catch (Exception ex) 
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }

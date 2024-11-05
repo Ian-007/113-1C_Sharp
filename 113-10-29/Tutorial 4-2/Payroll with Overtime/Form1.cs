@@ -27,11 +27,11 @@ namespace Payroll_with_Overtime
             {
                 hourWorked = decimal.Parse(hoursWorkedTextBox.Text);
                 hourlyPayRate = decimal.Parse(hourlyPayRateTextBox.Text);
-                
-                if (hourWorked > BASE_HOUR) 
+
+                if (hourWorked > BASE_HOUR)
                 {
-                   grossPay = (BASE_HOUR * hourlyPayRate)+
-                        (hourWorked - BASE_HOUR) * hourlyPayRate *OVERTIME_RATE;
+                    grossPay = (BASE_HOUR * hourlyPayRate) +
+                         (hourWorked - BASE_HOUR) * hourlyPayRate * OVERTIME_RATE;
                 }
                 else
                 {
@@ -39,7 +39,8 @@ namespace Payroll_with_Overtime
                 }
 
                 grossPayLabel.Text = grossPay.ToString("c");
-            catch (Exception ex) 
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
