@@ -27,7 +27,7 @@ namespace Friend_File
                 outputFile = File.AppendText(@"C:\Users\shu\Desktop\Friend.txt");
                 outputFile.WriteLine(nameTextBox.Text);
                 outputFile.Close();
-                MessageBox.Show("名子已寫入檔案");
+                MessageBox.Show("名字已寫入檔案");
             }
             catch (Exception ex)
             {
